@@ -10,31 +10,30 @@ def markov_dict():
         # open txt file and read to string, string to lower
         seussical = seuss_script.read()
         seussical = seussical.lower()
-        word_freqs = {}
+        
         # use regex to split text into words and punctuation
         global seuss_string
-        seuss_string = re.sub(
-            '['+string.punctuation+']', '', seussical).split()
-        past_word = ""
-        frequency = {}
+    seuss_string = re.sub('['+string.punctuation+']', '', seussical).split()
+        
         # for loop that runs over every word in test
-        for word in seuss_string:
-            # if past_word is in dict, assign it to 'frequency'
-            if past_word in word_freqs:
-                frequency = word_freqs[past_word]
-            # if not, create empty dictionary with past_word as the key and frequency as the value
-            else:
-                word_freqs[past_word] = frequency
+    seuss_dicts = {}
 
-            if word in frequency:
-                frequency[word] += 1
-            else:
-                frequency[word] = 1
+    for i, word in enumerate(seuss_string[:-1]):
+        current_word = seuss_string[i+1]
+        # if current_word is in dict, asssign it to 'next_count'
+        if current_word not in seuss_dicts:
+            next_count = {}
+            seuss_dicts[current_word] = next_count
 
-            past_word = word
+        # if not, create empty dictionary with current_word as the key and next_count as the value
+        else:
+            next_count = seuss_dicts[current_word]
 
-        return word_freqs
-
+        if word in next_count:
+            next_count[word] += 1
+        else:
+            next_count[word] = 1
+    current_word = seuss_string[i+1]
 
 markov_dict()
 # name our new dictionary of words and count of next possible words to a new variable
@@ -42,45 +41,45 @@ seuss_dict = markov_dict()
 # print(seuss_dict)
 
 
-import re
-import string
-from numpy.random import choice
-import random
+# import re
+# import string
+# from numpy.random import choice
+# import random
 
-def markov_dict():
-    """create a dict of how what words follow which and how many times they did"""
-    with open('./seuss_script.txt', 'r') as seuss_script:
-        # open txt file and read to string, string to lower
-        seussical = seuss_script.read()
-        seussical = seussical.lower()
-        word_freqs = {}
-        # use regex to split text into words and punctuation
-        global seuss_string
-        seuss_string = re.sub('['+string.punctuation+']', '', seussical).split()
-        past_word = ""
-        frequency = {}
-        # for loop that runs over every word in test
-        for word in seuss_string:
-            # if past_word is in dict, assign it to 'frequency'
-            if past_word in word_freqs:
-                frequency = word_freqs[past_word]
-            # if not, create empty dictionary with past_word as the key and frequency as the value
-            else:
-                word_freqs[past_word] = frequency
+# def markov_dict():
+#     """create a dict of how what words follow which and how many times they did"""
+#     with open('./seuss_script.txt', 'r') as seuss_script:
+#         # open txt file and read to string, string to lower
+#         seussical = seuss_script.read()
+#         seussical = seussical.lower()
+#         word_freqs = {}
+#         # use regex to split text into words and punctuation
+#         global seuss_string
+#         seuss_string = re.sub('['+string.punctuation+']', '', seussical).split()
+#         past_word = ""
+#         frequency = {}
+#         # for loop that runs over every word in test
+#         for word in seuss_string:
+#             # if past_word is in dict, assign it to 'frequency'
+#             if past_word in word_freqs:
+#                 frequency = word_freqs[past_word]
+#             # if not, create empty dictionary with past_word as the key and frequency as the value
+#             else:
+#                 word_freqs[past_word] = frequency
 
-            if word in frequency:
-                frequency[word] += 1
-            else:
-                frequency[word] = 1
+#             if word in frequency:
+#                 frequency[word] += 1
+#             else:
+#                 frequency[word] = 1
 
-            past_word = word
+#             past_word = word
 
-        return word_freqs
+#         return word_freqs
 
-markov_dict()
-# name our new dictionary of words and count of next possible words to a new variable
-seuss_dict = markov_dict()
-# print(seuss_dict)
+# markov_dict()
+# # name our new dictionary of words and count of next possible words to a new variable
+# seuss_dict = markov_dict()
+# # print(seuss_dict)
 
 
 """start the story"""
@@ -160,4 +159,4 @@ print(story)
 whos_next()
 
 
-vals = [do() for _ in range(3)]
+
