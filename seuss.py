@@ -2,7 +2,6 @@ import re
 import string
 from numpy.random import choice
 import random
-import json
 
 
 """READ FILE IN TO PLAY"""
@@ -12,8 +11,9 @@ with open('extra_text.txt', 'r') as seuss_script:
     seussical = seuss_script.read()
     seussical = seussical.lower()
 
-# use regex to split text into words and punctuation
+# use regex to split text into words and punctuation, including contracted words
 seuss_string = re.findall(r"(?:\w+[']?\w)+|[.,]", seussical)
+
 
 
 """CREATE OUR NESTED DICT TO SAVE HOW OFTEN ONE WORD FOLLOWS ANOTHER"""
@@ -58,6 +58,7 @@ while first_word in string.punctuation:
 if story == []:
     # set story up with our first word
     story.append(first_word)
+
 
 
 """CREATE THE WEIGHTED PROB ALGORITHM TO DETERMINE THE NEXT WORD"""
@@ -126,5 +127,7 @@ for sentence in sentences:
 # turn our story back into a string
 cap_sent = ' '.join(cap_sent)
 
+
+"""THE END. NOW LETS READ OUR NEW TALE"""
 # print our newly made and beautifully laid out dr seuss story
 print(cap_sent)
