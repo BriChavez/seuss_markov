@@ -2,161 +2,129 @@ import re
 import string
 from numpy.random import choice
 import random
+import json
 
 
-def markov_dict():
-    """create a dict of how what words follow which and how many times they did"""
-    with open('./seuss_script.txt', 'r') as seuss_script:
-        # open txt file and read to string, string to lower
-        seussical = seuss_script.read()
-        seussical = seussical.lower()
-        
-        # use regex to split text into words and punctuation
-        global seuss_string
-    seuss_string = re.sub('['+string.punctuation+']', '', seussical).split()
-        
-        # for loop that runs over every word in test
-    seuss_dicts = {}
+"""READ FILE IN TO PLAY"""
 
-    for i, word in enumerate(seuss_string[:-1]):
-        current_word = seuss_string[i+1]
-        # if current_word is in dict, asssign it to 'next_count'
-        if current_word not in seuss_dicts:
-            next_count = {}
-            seuss_dicts[current_word] = next_count
+with open('extra_text.txt', 'r') as seuss_script:
+    # open txt file and read to string, string to lower
+    seussical = seuss_script.read()
+    seussical = seussical.lower()
 
-        # if not, create empty dictionary with current_word as the key and next_count as the value
-        else:
-            next_count = seuss_dicts[current_word]
-
-        if word in next_count:
-            next_count[word] += 1
-        else:
-            next_count[word] = 1
-    current_word = seuss_string[i+1]
-
-markov_dict()
-# name our new dictionary of words and count of next possible words to a new variable
-seuss_dict = markov_dict()
-# print(seuss_dict)
+# use regex to split text into words and punctuation
+seuss_string = re.findall(r"(?:\w+[']?\w)+|[.,]", seussical)
 
 
-# import re
-# import string
-# from numpy.random import choice
-# import random
+"""CREATE OUR NESTED DICT TO SAVE HOW OFTEN ONE WORD FOLLOWS ANOTHER"""
 
-# def markov_dict():
-#     """create a dict of how what words follow which and how many times they did"""
-#     with open('./seuss_script.txt', 'r') as seuss_script:
-#         # open txt file and read to string, string to lower
-#         seussical = seuss_script.read()
-#         seussical = seussical.lower()
-#         word_freqs = {}
-#         # use regex to split text into words and punctuation
-#         global seuss_string
-#         seuss_string = re.sub('['+string.punctuation+']', '', seussical).split()
-#         past_word = ""
-#         frequency = {}
-#         # for loop that runs over every word in test
-#         for word in seuss_string:
-#             # if past_word is in dict, assign it to 'frequency'
-#             if past_word in word_freqs:
-#                 frequency = word_freqs[past_word]
-#             # if not, create empty dictionary with past_word as the key and frequency as the value
-#             else:
-#                 word_freqs[past_word] = frequency
-
-#             if word in frequency:
-#                 frequency[word] += 1
-#             else:
-#                 frequency[word] = 1
-
-#             past_word = word
-
-#         return word_freqs
-
-# markov_dict()
-# # name our new dictionary of words and count of next possible words to a new variable
-# seuss_dict = markov_dict()
-# # print(seuss_dict)
-
-
-"""start the story"""
-
-# name variable with the first word in our list of words
-first_word = random.choice(seuss_string)
-print(first_word)
-# name the first word of our story as
-global story
-story = []
-
-
-def start_story(list):
-    """function to start the story"""
-    if story == []:
-        # set story up with a first word
-        story.append(first_word)
+seuss_dict = {}
+# for loop that runs over every word in our string, but stating to stop at the last word
+for i, word in enumerate(seuss_string[:-1]):
+    # setting this word to be the word right after the one we were on
+    this_word = seuss_string[i+1]
+    # if this_word isnt in our dictionary already...
+    if this_word not in seuss_dict:
+        # start our counter dict
+        next_count = {}
+        # add our new word to be a key in our seuss dict and the count dict to be its value
+        seuss_dict[this_word] = next_count
+    # if it is already in there....
     else:
-        # dont start the story if its already been started
-        pass
-    return story
+        # create empty dictionary with this_word as the key and next_count as the value
+        next_count = seuss_dict[this_word]
+    # if the next word(word) is in our nested dict already...
+    if word in next_count:
+        # add one to its count
+        next_count[word] += 1
+    # if its not already in there
+    else:
+        # lets add it and set its count to 1
+        next_count[word] = 1
 
 
-start_story(seuss_string)
-# call function on our list of words from the text
-seuss_list = seuss_string
+
+"""START THE STORY"""
+
+# starting out story off blank
+story = []
+# Pick the first word at random from our initial string
+first_word = random.choice(seuss_string)
+# while loop to make sure we dont start on punctuation
+while first_word in string.punctuation:
+    # if it was punctuation, choose again
+    first_word = random.choice(seuss_string)
+# if story is blank...
+if story == []:
+    # set story up with our first word
+    story.append(first_word)
 
 
+"""CREATE THE WEIGHTED PROB ALGORITHM TO DETERMINE THE NEXT WORD"""
+
+# function to get the next word using weighted probability
 def whos_next():
-    """function to get the next word using weighted probability"""
-
+    # set the current word to the last line of the story
+    current_word = story[-1]
+    # pull the main words and the words following them from our nested dict
     for outer_word, inner_dict in seuss_dict.items():
-        # pick out our nested dict for specific word
+        # set a variable to be equal to following words and their frequency counts
         word_self_total = inner_dict.items()
-        # get the next words and instances
+        # get the frequency counts from our following words
         total_occurances = inner_dict.values()
-        # seperate the instances
+        # enter the outer dictionary of the word we are on
         if outer_word == current_word:
-            # pull the dictionary for the current word
-            total = sum(total_occurances)
             # add the total times a word followed current word
-            probs = []
+            total = sum(total_occurances)
             # set empty variable for the percent chance of each word occuring
-            hopefuls = []
+            probs = []
             # set a list of all words that came after current word
-            likely = []
+            hopefuls = []
             # set an empty list to grab the count of each word
+            likely = []
+            # pull every number of times each word came after current
             for number in total_occurances:
-                # pull every number of times each word came after current
-                percent = number / total
                 # factor the percent chance of a word being next
-                probs.append(percent)
+                percent = number / total
                 # add each percent to our probs list
-
+                probs.append(percent)
+            # pull words and their values from our current word's inner dict
             for word, num in word_self_total:
-                # pull words and their values from our inner dict
-                hopefuls.append(word)
                 # add each word to our hopefuls list
-                likely.append(num)
+                hopefuls.append(word)
                 # add each number to our likely list
-                global rng_says
-
+                likely.append(num)
+            # weighted rng based off the percent probability of word occurring
             rng_says = choice(hopefuls, p=probs)
-            # weighted rng based off the percent probability of word occuring
-            return rng_says
+            # change rng output from numpy to string
+            next_word = str(rng_says)
+            # add our next word string to the story
+            story.append(next_word)
+            
 
 
-"""add words to the story"""
-next_word = str(rng_says)
-# change rng output from numpy to string
-story.append(next_word)
-# add our next word string to the story
-current_word = story[-1]
-# set current word to be the last word of the story
+"""ADD WORDS TO OUR STORY, DROP WHITE SPACE, CAPITALIZE, AND NEWLINE"""
 
-print(story)
-whos_next()
+# while our story is less than this long
+while len(story) < 600:
+    # call our function
+    whos_next()
+# set our full story to be 
+whole_story = ' '.join(story)
 
+# replace white space preceding punctuation
+whole_story = re.sub(r'\s([?.,!](?:\s|$))', r'\1', whole_story)
 
+# resplit the story, this time on sentences
+sentences = re.split('[?.]', whole_story)
+# set a new clean variable
+cap_sent = []
+# run each sentence of our story through this for loop
+for sentence in sentences:
+    # strip the left white space, capitalize the first word of every sentence, add a period, and a new line
+    cap_sent.append((sentence.lstrip().capitalize() + '.' + "\n"))
+# turn our story back into a string
+cap_sent = ' '.join(cap_sent)
 
+# print our newly made and beautifully laid out dr seuss story
+print(cap_sent)
