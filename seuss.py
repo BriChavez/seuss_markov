@@ -15,14 +15,13 @@ with open('extra_text.txt', 'r') as seuss_script:
 seuss_string = re.findall(r"(?:\w+[']?\w)+|[.,]", seussical)
 
 
-
 """CREATE OUR NESTED DICT TO SAVE HOW OFTEN ONE WORD FOLLOWS ANOTHER"""
 
 seuss_dict = {}
 # for loop that runs over every word in our string, but stating to stop at the last word
 for i, word in enumerate(seuss_string[:-1]):
     # setting this word to be the word right after the one we were on
-    this_word = seuss_string[i+1]
+    this_word = seuss_string[i-1]
     # if this_word isnt in our dictionary already...
     if this_word not in seuss_dict:
         # start our counter dict
@@ -43,7 +42,6 @@ for i, word in enumerate(seuss_string[:-1]):
         next_count[word] = 1
 
 
-
 """START THE STORY"""
 
 # starting out story off blank
@@ -58,7 +56,6 @@ while first_word in string.punctuation:
 if story == []:
     # set story up with our first word
     story.append(first_word)
-
 
 
 """CREATE THE WEIGHTED PROB ALGORITHM TO DETERMINE THE NEXT WORD"""
@@ -103,7 +100,6 @@ def whos_next():
             story.append(next_word)
             
 
-
 """ADD WORDS TO OUR STORY, DROP WHITE SPACE, CAPITALIZE, AND NEWLINE"""
 
 # while our story is less than this long
@@ -124,10 +120,12 @@ cap_sent = []
 for sentence in sentences:
     # strip the left white space, capitalize the first word of every sentence, add a period, and a new line
     cap_sent.append((sentence.lstrip().capitalize() + '.' + "\n"))
-# turn our story back into a string
+# turn our story back into a string by joining it back in together
 cap_sent = ' '.join(cap_sent)
 
 
 """THE END. NOW LETS READ OUR NEW TALE"""
-# print our newly made and beautifully laid out dr seuss story
-print(cap_sent)
+# save our newly made and beautifully laid out dr seuss story
+text_file = open('saved_seuss/seuss_story2.txt', 'w')
+text_file.write(cap_sent)
+text_file.close()
