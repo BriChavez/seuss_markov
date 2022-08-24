@@ -101,7 +101,7 @@ def whos_next():
 """ADD WORDS TO OUR STORY, DROP WHITE SPACE, CAPITALIZE, AND NEWLINE"""
 
 # while our story is less than this long
-while len(story) < 400:
+while len(story) < 200:
     # call our function
     whos_next()
 # set our full story to be 
@@ -183,7 +183,7 @@ cap_sent = ''.join(cap_sent)
 """NOW LET'S SAVE AND READ OUR NEW TALE"""
 
 # open a file of whatever name we want to save it as
-text_file = open('saved_seuss/seuss_story5.txt', 'w')
+text_file = open('seuss_story5.txt', 'w')
 # write our newly made and beautifully laid out dr seuss story to the file
 text_file.write(cap_sent)
 # shut it down and share your fun story with a friend
