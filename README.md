@@ -1,11 +1,8 @@
 # markov
 
 Boat could you the very sad, no.
-
 Seuss the star belly children had none upon thars then,
-
 He fell on top of the grickle grass,
-
 For you snooty old nuisance lorax,
 No fear, they all if your way so tall,
 Long time at the trees, with more trees, and great grandfather snail.
