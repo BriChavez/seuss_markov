@@ -3,8 +3,8 @@
 
 <p float="center">
   <img img align="top" src="thing1.jpg" width="200" />
-  <img src="seuss_op.jpg" width="600" /> 
-  <img src="thing2.jpg" width="220" />
+  <img src="seuss_op.jpg" width="550" /> 
+  <img src="thing2.jpg" width="210" />
 </p>
 
 <br/><br/><br/><br/>
