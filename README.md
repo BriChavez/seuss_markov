@@ -5,7 +5,7 @@
 
 some text aligned to the right of the image
 
-<br clear="left"/>
+
 Boat could you the very sad, no.<br/>
 Seuss the star belly children had none upon thars then,<br/>
 He fell on top of the grickle grass,<br/>
@@ -30,7 +30,7 @@ Would not like them eat them.<br/>
 And will not shine.<br/>
 You snooty old nuisance lorax, as famous can hold up with fox.<br/>
 The plain belly sneetches are low.<br/>
-
+<br clear="left"/>
 
 <br/><br/><br/><br/>
 ## &emsp; **A Peek Into How Markov's Work**
