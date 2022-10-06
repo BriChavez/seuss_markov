@@ -39,14 +39,19 @@ This is an example of exact output. All formatting is done with python and is wr
 <a href="https://www.youtube.com/embed/i3AkTO9HLXo"><img src="images/mc.jpg" alt="Markov Chains Clearly Explained! Part - 1" width="691" height="389" border="10" /></a>
 </p>
 
-</br>
+
 
 
 <img align="right" src="images/nest_ex.png" alt="Example of what the created dictionary looks like using Red Fish, Blue Fish" width=20%>
 
-#### Explanation
+## Explanation
+### *Brief break down of the nuances of my code.
 
-## Delving deep and almost losing my self in python's deep nested dictionaries. Holy crap, that almost broke my brain. 
+
+&emsp; First we start with importing text to train our model. This is especially fun because **you can use any text input you want.** Since I choose more of a lyrical text, I decided I wanted to keep contractions and, for output readability, discard all single letter words. Took forever, but i finally got the regex correct. For those curious kids watching at home, the regex is r'[.,]|[a-z]+[']?[a-z]+'
+
+
+##### Delving deep and almost losing my self in python's deep nested dictionaries. Holy crap, that almost broke my brain. 
 
 <br clear="right"/>
 
