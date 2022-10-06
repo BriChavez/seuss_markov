@@ -1,12 +1,12 @@
 
- <img  width="100%" src="seuss_flavor.jpg" alt="Seuss" /> 
+ <img  width="100%" src="images/seuss_flavor.jpg" alt="Seuss" /> 
 
 ___
 
 <p float="center">
-  <img img align="top" src="thing1.jpg" width="20%" />
-  <img src="seuss_op.jpg" width="50%" /> 
-  <img src="thing2.jpg" width="22%" />
+  <img img align="top" src="images/thing1.jpg" width="20%" />
+  <img src="images/seuss_op.jpg" width="50%" /> 
+  <img src="images/thing2.jpg" width="22%" />
 </p>
 
 <br/>
@@ -20,7 +20,7 @@ This is an example of exact output. All formatting is done with python and is wr
 ## &emsp; **A Peek Into How Markov Works**
 
 
-<img align="right" width="300" src="simple_marc.jpg" alt="Markov Chain Simple Graph">
+<img align="right" width="300" src="images/simple_marc.jpg" alt="Markov Chain Simple Graph">
     
 
 &emsp; A Markov chain or Markov process is a *theoretical model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event*. Informally, this may be thought of as, <strong>What happens next depends only on the state of affairs now.</strong> Markov chains have many applications as statistical models of real-world processes. They are the basis for general theoretical simulation methods and have found application in a wide variety of fields.<br/>
@@ -36,13 +36,13 @@ This is an example of exact output. All formatting is done with python and is wr
 <br/><br/><br/>
 
 <p align="center">
-<a href="https://www.youtube.com/embed/i3AkTO9HLXo"><img src="mc.jpg" alt="Markov Chains Clearly Explained! Part - 1" width="691" height="389" border="10" /></a>
+<a href="https://www.youtube.com/embed/i3AkTO9HLXo"><img src="images/mc.jpg" alt="Markov Chains Clearly Explained! Part - 1" width="691" height="389" border="10" /></a>
 </p>
 
 </br>
 
 
-<img align="right" src="nest_ex.jpg" alt="Example of what the created dictionary looks like using Red Fish, Blue Fish" width=20%>
+<img align="right" src="images/nest_ex.png" alt="Example of what the created dictionary looks like using Red Fish, Blue Fish" width=20%>
 
 #### Explanation
 
@@ -52,7 +52,7 @@ This is an example of exact output. All formatting is done with python and is wr
 
 </br>
 <br/><br/><br/><br/>
-<img src="outputt.png" alt="Markov Scatter Graph" title="Markov Scatter Graph">
+<img src="images/outputt.png" alt="Markov Scatter Graph" title="Markov Scatter Graph">
 
 
 
