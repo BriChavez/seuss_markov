@@ -1,4 +1,5 @@
-# <img img align="fill" font="black" width="300" src="seuss_flavor.jpeg" alt="Seuss"> 
+# <img  width="100%" src="seuss_flavor.jpeg" alt="Seuss"> 
+
 
 
 
