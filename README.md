@@ -14,11 +14,11 @@
 
 &emsp; Markov chains have many applications as statistical models of real-world processes, such as studying cruise control systems in motor vehicles, queues or lines of customers arriving at an airport, currency exchange rates and animal population dynamics. Markov processes are the basis for general stochastic simulation methods, which are used for simulating sampling from complex probability distributions, and have found application in Bayesian statistics, thermodynamics, statistical mechanics, physics, chemistry, economics, finance, signal processing, information theory and speech processing.<br/>
 <br/><br/><br/><br/>
-<iframe width="691" height="389" src="https://www.youtube.com/embed/i3AkTO9HLXo" title="Markov Chains Clearly Explained! Part - 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
-[![Markov Chains Clearly Explained! Part - 1](sc.jpg)](https://www.youtube.com/embed/i3AkTO9HLXo "Markov Chains Clearly Explained! Part - 1")
+
+[![Markov Chains Clearly Explained! Part - 1](sc.jpg)](https://www.youtube.com/watch?v=i3AkTO9HLXo&ab_channel=NormalizedNerd "Markov Chains Clearly Explained! Part - 1")
 
 
 <br/><br/><br/><br/>
