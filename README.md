@@ -2,7 +2,7 @@
 
 
 <p float="center">
-  <img src="thing1.jpg" width="200" />
+  <img img align="top" src="thing1.jpg" width="200" />
   <img src="seuss_op.jpg" width="600" /> 
   <img src="thing2.jpg" width="200" />
 </p>
