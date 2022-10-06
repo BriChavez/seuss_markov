@@ -42,8 +42,13 @@ This is an example of exact output. All formatting is done with python and is wr
 </br>
 
 
+<img align="right" src="nest_ex.jpg" alt="Example of what the created dictionary looks like using Red Fish, Blue Fish" width=20%>
+
 #### Explanation
 
+## Delving deep and almost losing my self in python's deep nested dictionaries. Holy crap, that almost broke my brain. 
+
+<br clear="right"/>
 
 </br>
 <br/><br/><br/><br/>
