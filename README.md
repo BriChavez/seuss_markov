@@ -2,9 +2,9 @@
 
 
 <p float="middle">
-  <img src="/thing1.jpg" width="100" />
-  <img src="/seuss_op.jpg" width="100" /> 
-  <img src="/thing2" width="100" />
+  <img src="thing1.jpg" width="100" />
+  <img src="seuss_op.jpg" width="500" /> 
+  <img src="thing2.jpg" width="100" />
 </p>
 
 <br/><br/><br/><br/>
