@@ -1,9 +1,7 @@
 
-# <img  width="100%" src="seuss_flavor.jpeg" alt="Seuss"> 
+ <img  width="100%" src="seuss_flavor.jpeg" alt="Seuss" /> 
 
-
-
-
+___
 
 <p float="center">
   <img img align="top" src="thing1.jpg" width="20%" />
