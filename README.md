@@ -1,4 +1,4 @@
-# markov
+# **Dr. Seuss Flavored Markov**
 
 Boat could you the very sad, no.<br/>
 Seuss the star belly children had none upon thars then,<br/>
@@ -24,3 +24,6 @@ Would not like them eat them.<br/>
 And will not shine.<br/>
 You snooty old nuisance lorax, as famous can hold up with fox.<br/>
 The plain belly sneetches are low.<br/>
+
+
+![Markov Graph][outputt.png]
