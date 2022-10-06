@@ -1,10 +1,7 @@
 # &emsp; **Dr. Seuss Flavored Markov**
 
 
-<img align="left" src="thing1.jpg">
-
-some text aligned to the right of the image
-
+<img align="left" src="thing1.jpg"><br clear="left"/>
 
 Boat could you the very sad, no.<br/>
 Seuss the star belly children had none upon thars then,<br/>
@@ -12,7 +9,7 @@ He fell on top of the grickle grass,<br/>
 For you snooty old nuisance lorax,<br/>
 No fear, they all if your way so tall,<br/>
 Long time at the trees, with more trees, and great grandfather snail.<br/>
-.<br/><br clear="left"/>
+.<br/>
 That's how my cough they will bump.<br/>
 That's not like to run down pup is ten dollars each day,<br/>
 Go there.<br/>
