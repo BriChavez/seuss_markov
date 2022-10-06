@@ -9,7 +9,9 @@ ___
   <img src="thing2.jpg" width="22%" />
 </p>
 
-<br/><br/><br/><br/>
+<br/>
+#### This is an example of exact output. All formatting is done with python and is written into the code. *More in depth explanation further* [below.](#explanation)
+<br/><br/><br/>
 ## &emsp; **A Peek Into How Markov Works**
 
 
@@ -32,9 +34,9 @@ ___
 <a href="https://www.youtube.com/embed/i3AkTO9HLXo"><img src="mc.jpg" alt="Markov Chains Clearly Explained! Part - 1" width="691" height="389" border="10" /></a>
 </p>
 
-
-
-
+</br>
+#### Explanation
+</br>
 <br/><br/><br/><br/>
 <img src="outputt.png" alt="Markov Scatter Graph" title="Markov Scatter Graph">
 
