@@ -26,4 +26,4 @@ You snooty old nuisance lorax, as famous can hold up with fox.<br/>
 The plain belly sneetches are low.<br/>
 
 
-![Markov Graph][/home/fossa/data/dont_worry_about_it/markov/outputt.png]
+<img src="outputt.png" alt="Alt text" title="Optional title">
