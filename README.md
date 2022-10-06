@@ -49,11 +49,8 @@ This is an example of exact output. All formatting is done with python and is wr
 
 
 &emsp; First we start with importing text to train our model. This is especially fun because **you can use any text input you want.** Since I choose more of a lyrical text, I decided I wanted to keep contractions and, for output readability, discard all single letter words. Also, I left in commas and periods to help preserve sentence structure. Took forever, but i finally got the regex correct.
-
-<center> For those curious kids watching at home, the regex is r'[.,]|[a-z]+[']?[a-z]+' </center>
-
-*For those curious kids watching at home, the regex is r'[.,]|[a-z]+[']?[a-z]+'*
-</b>
+<sub><sup> For those curious kids watching at home, the regex is r'[.,]|[a-z]+[']?[a-z]+'</sub></sup>
+</br>
 
 
 
