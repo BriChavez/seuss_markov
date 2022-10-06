@@ -11,7 +11,7 @@
 ## &emsp; **A Peek Into How Markov Works**
 
 
-<img align="right" width="400" src="1_markov-chain.jpg" alt="Markov Chain Simple Graph">
+<img align="right" width="400" src="simple_marc.jpg" alt="Markov Chain Simple Graph">
     
 
 &emsp; A Markov chain or Markov process is a *theoretical model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event*. Informally, this may be thought of as, <strong>What happens next depends only on the state of affairs now.</strong> Markov chains have many applications as statistical models of real-world processes. They are the basis for general theoretical simulation methods and have found application in a wide variety of feilds.<br/>
