@@ -10,7 +10,7 @@ ___
 </p>
 
 <br/>
-#### This is an example of exact output. All formatting is done with python and is written into the code. *More in depth explanation further* [below.](#explanation)
+#### This is an example of exact output. All formatting is done with python and is written into the code. *More in depth explanation further* 
 <br/><br/><br/>
 ## &emsp; **A Peek Into How Markov Works**
 
