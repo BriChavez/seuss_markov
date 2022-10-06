@@ -16,7 +16,7 @@
 <br/><br/><br/><br/>
 
 
-<a href="https://www.youtube.com/embed/i3AkTO9HLXo"><img align='center' src="mc.jpg" alt="Markov Chains Clearly Explained! Part - 1" width="691" height="389" border="10" /></a>>
+<a href="https://www.youtube.com/embed/i3AkTO9HLXo"><img float='center' src="mc.jpg" alt="Markov Chains Clearly Explained! Part - 1" width="691" height="389" border="10" /></a>>
 
 
 
