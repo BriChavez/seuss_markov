@@ -1,4 +1,4 @@
-# <img align="left" width="300" src="seuss.jpeg" alt="Seuss">  **Flavored Markov** <br clear="left"/>
+# <img align="middle" width="300" src="seuss.jpeg" alt="Seuss">  **Flavored Markov** <br clear="middle"/>
 
 
 <p float="center">
