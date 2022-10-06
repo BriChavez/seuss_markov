@@ -1,4 +1,4 @@
-<img align="left" width="300" src="simple_marc.jpg" alt="Markov Chain Simple Graph"> # **Dr. Seuss Flavored Markov** <br clear="left"/>
+<img align="left" width="300" src="seuss.jpeg" alt="Markov Chain Simple Graph"> # **Dr. Seuss Flavored Markov** <br clear="left"/>
 
 
 <p float="center">
