@@ -16,5 +16,10 @@
 <br/><br/><br/><br/>
 <iframe width="691" height="389" src="https://www.youtube.com/embed/i3AkTO9HLXo" title="Markov Chains Clearly Explained! Part - 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+
+[![Markov Chains Clearly Explained! Part - 1](sc.jpg)](https://www.youtube.com/embed/i3AkTO9HLXo "Markov Chains Clearly Explained! Part - 1")
+
+
 <br/><br/><br/><br/>
 <img src="outputt.png" alt="Markov Scatter Graph" title="Markov Scatter Graph">
