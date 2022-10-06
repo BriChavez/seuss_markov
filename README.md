@@ -8,7 +8,7 @@
 </p>
 
 <br/><br/><br/><br/>
-## &emsp; **A Peek Into How Markov's Work**
+## &emsp; **A Peek Into How Markov Works**
 
 &emsp; A Markov chain or Markov process is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, "What happens next depends only on the state of affairs now."<br/>
 
@@ -16,9 +16,10 @@
 <br/><br/><br/><br/>
 
 <p float="center">
-<a href="https://www.youtube.com/embed/i3AkTO9HLXo"><img src="mc.jpg" alt="Markov Chains Clearly Explained! Part - 1" width="691" height="389" border="10" /></a>>
+<a href="https://www.youtube.com/embed/i3AkTO9HLXo"><img src="mc.jpg" alt="Markov Chains Clearly Explained! Part - 1" width="691" height="389" border="10" /></a>
 </p>
 
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=brichavez&theme=dark&background=000000)](https://git.io/streak-stats)
 
 
 <br/><br/><br/><br/>
