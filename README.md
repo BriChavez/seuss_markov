@@ -1,4 +1,4 @@
-# <img img align="bottom" align="left" background_color="black" width="300" src="seuss.jpeg" alt="Seuss">  **Flavored Markov** <br clear="left"/>
+# <img img align="fill" font="black" width="300" src="seuss_flavor.jpeg" alt="Seuss"> 
 
 
 
