@@ -5,14 +5,14 @@ ___
 
 <p float="center">
   <img img align="top" src="images/thing1.jpg" width="20%" />
-  <img src="images/seuss_op.jpg" width="50%" /> 
+  <img src="images/seuss_op.jpg" width="50%" />  
   <img src="images/thing2.jpg" width="22%" />
 </p>
 
 <br/>
 
 
-This is an example of exact output. All formatting is done with python and is written into the code. *More in depth explanation further* [below.](#explanation)
+<sub> This is an example of exact output. All formatting is done with python and is written into the code. *More in depth explanation further* [below.](#explanation) </sub>
 
 
 <br/><br/><br/>
@@ -48,26 +48,28 @@ This is an example of exact output. All formatting is done with python and is wr
 ### **Brief break down of the nuances of my code.**
 
 
-&emsp; First, we start with importing text to train our model. This is especially fun because **you can use any text input you want.** Since I choose more of a lyrical text, I decided I wanted to keep contractions and, for output readability, discard all single letter words. Also, I left in commas and periods to help preserve sentence structure. Took forever, but I finally got the regex correct.
+&emsp; First, we start with importing text to train our model. This is especially fun because you can **use any text input you want.** Since I choose more of a lyrical text, I decided I wanted to keep contractions and, for output readability, discard all single letter words. Also, I left in commas and periods to help preserve sentence structure. Took forever, but I finally got the regex correct.
 <p align="right"><sub> For those curious kids watching at home, the regex is r'[.,]|[a-z]+[']?[a-z]+'</sub></p>
 
 
 
-##### Delving deep and almost losing my self in python's deep nested dictionaries. Holy crap, that almost broke my brain. 
+##### Delving deep and almost losing my self in python's deep nested dictionaries. That almost broke my brain. 
 
-&emsp; WOW! Iterating over, calculating and storing the total amount of times a word follows each another word in a given text
+&emsp; Iterating over each word in a text, calculating and storing every word that follows it throughout the text and how many times that same patter occurs  subsequent word and the amoutnt of time  that exact the total amount of times each word follows another word in a given text
 iterating over a text while recording and tallying the amount of times each word follows another  taking a given text and calculating the amount of time a word follows another word. 
-taking a given text and calculating the amount of time each . 
-in a given text, it iterates over ever every word, recording each subsequent word and tallying the rate in wich it occurs
+in a given text, it iterates over ever every word, recording each subsequent word and tallying the rate in witch that same pair occurs
  those words int that order occurrence each  word over the entirety text and tallying the rate off occurrence.  
 
-
+&emsp; So, let's make the starting word as the first key in our dictionary, the next word becomes a nested key under the first word with the value being one
+hen we do it over and over again until we get to the end,
 <br clear="right"/>
 
 </br>
-<br/><br/><br/><br/>
+<br/><br/><br/>
+<br/>
 <img src="images/outputt.png" alt="Markov Scatter Graph" title="Markov Scatter Graph">
 
 
 
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=brichavez&theme=dark&background=000000)](https://git.io/streak-stats)
+  
