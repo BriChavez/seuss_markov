@@ -4,7 +4,7 @@
 ___
 
 <p float="center">
-  <img img align="top" src="images/thing1.jpg" width="20%" />
+  <img img align="top" src="images/thing1.jpg" width="25%" />
   <img src="images/seuss_op.jpg" width="50%" />  
   <img src="images/thing2.jpg" width="22%" />
 </p>
@@ -42,7 +42,7 @@ ___
 
 
 
-<img align="right" src="images/nest_ex.png" alt="Example of what the created dictionary looks like using Red Fish, Blue Fish" width=20%>
+<img align="right" src="images/nest_ex.png" alt="Example of what the created dictionary looks like using Red Fish, Blue Fish" width=25%>
 
 ## Explanation
 ### **Brief break down of the nuances of my code.**
