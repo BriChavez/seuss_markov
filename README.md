@@ -40,6 +40,7 @@ ___
 </p>
 
 
+<br/><br/><br/>
 
 
 <img align="right" src="images/nest_ex.png" alt="Example of what the created dictionary looks like using Red Fish, Blue Fish" width=25%>
