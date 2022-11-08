@@ -68,7 +68,3 @@ hen we do it over and over again until we get to the end,
 <br/>
 <img src="images/outputt.png" alt="Markov Scatter Graph" title="Markov Scatter Graph">
 
-
-
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=brichavez&theme=dark&background=000000)](https://git.io/streak-stats)
-  
