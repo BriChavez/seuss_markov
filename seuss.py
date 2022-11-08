@@ -20,7 +20,7 @@ seuss_dict = {}
 for i, word in enumerate(seuss_string[:-1]):
     # setting this word to be the word right after the one we were on
     this_word = seuss_string[i - 1]
-    # if this_word isnt in our dictionary already...
+    # if this_word isn't in our dictionary already...
     if this_word not in seuss_dict:
         # start our counter dict
         next_count = {}
@@ -67,19 +67,19 @@ def whos_next():
         # set a variable to be equal to following words and their frequency counts
         word_self_total = inner_dict.items()
         # get the frequency counts from our following words
-        total_occurances = inner_dict.values()
+        total_occurrences = inner_dict.values()
         # enter the outer dictionary of the word we are on
         if outer_word == current_word:
             # add the total times a word followed current word
-            total = sum(total_occurances)
-            # set empty variable for the percent chance of each word occuring
+            total = sum(total_occurrences)
+            # set empty variable for the percent chance of each word occurring
             probs = []
             # set a list of all words that came after current word
             hopefuls = []
             # set an empty list to grab the count of each word
             likely = []
             # pull every number of times each word came after current
-            for number in total_occurances:
+            for number in total_occurrences:
                 # factor the percent chance of a word being next
                 percent = number / total
                 # add each percent to our probs list
@@ -111,7 +111,7 @@ whole_story = ' '.join(story)
 # Matches the contents of the group of the same number. Groups are numbered starting from 1
 whole_story = re.sub(r'\s([?.,!](?:\s|$))', r'\1', whole_story)
 
-# resplit the story, this time on sentences
+# re-split the story, this time on sentences
 sentences = re.split('[?.]', whole_story)
 # set a new clean variable
 cap_sent = []
@@ -119,8 +119,8 @@ cap_sent = []
 
 
 def cut_down(sentence):
-    """funtion to make our sentences have to be less than 13 words long"""
-    # if they arent...
+    """function to make our sentences have to be less than 13 words long"""
+    # if they aren't...
     if len(sentence.split(' ')) > 12:
         # prefer to split on a comma, so lets do that first
         if ',' in sentence:
@@ -163,7 +163,7 @@ def cut_down(sentence):
         # now, lets get our sentence back
         return sentence
 
-    # if the sentence isnt too long...
+    # if the sentence isn't too long...
     else:
         # give it back to us
         return sentence
@@ -173,7 +173,7 @@ def cut_down(sentence):
 for sentence in sentences:
     # lets drop the leading white space and capitalize each sentence
     sentence = sentence.lstrip().capitalize() + '.' + "\n"
-    # now, lets send each one through our function to make sure our sentences arent crazy long
+    # now, lets send each one through our function to make sure our sentences aren't crazy long
     sentence = cut_down(sentence)
     # now that they look better, lets add it to a clean list
     cap_sent.append(sentence)
