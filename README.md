@@ -56,10 +56,8 @@ ___
 
 ##### Delving deep and almost losing my self in python's deep nested dictionaries. That almost broke my brain. 
 
-&emsp; Iterating over each word in a text, calculating and storing every word that follows it throughout the text and how many times that same patter occurs  subsequent word and the amoutnt of time  that exact the total amount of times each word follows another word in a given text
-iterating over a text while recording and tallying the amount of times each word follows another  taking a given text and calculating the amount of time a word follows another word. 
-in a given text, it iterates over ever every word, recording each subsequent word and tallying the rate in witch that same pair occurs
- those words int that order occurrence each  word over the entirety text and tallying the rate off occurrence.  
+&emsp; Building the nested dictionaries necessary to iterate over each word in a text, tallying every word that follows it amd how many time almost broke my brain. Every word got its own dictionary containing the words that follow it and how many times. I then added the total count and used that to determine the weighted probability of each of the successive word. We then start the story with a random word, rerolling if its punctuation. We pull that words nested dictionary and, using the weighted probability, we rng the next word. Rinse and repeat until the story is as long as we want. Next, it runs through a recursive function designed to make sure each line (line is determined by when a period is called up) is no longer than 13 words, splitting at the middle comma, if there is one, and in the middle, if there isn't, capitalizing the first word in each and dropping the other down.
+
 
 &emsp; So, let's make the starting word as the first key in our dictionary, the next word becomes a nested key under the first word with the value being one
 hen we do it over and over again until we get to the end,
